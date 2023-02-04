@@ -7,7 +7,7 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 241, 241, 241),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
       body: SafeArea(
           child: Center(
         child: Padding(
@@ -145,10 +145,10 @@ class Register extends StatelessWidget {
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(
-                                      color: Color.fromARGB(255, 70, 42, 146))),
+                                      color: Color.fromARGB(255, 70, 40, 140))),
                             ),
                             backgroundColor: const MaterialStatePropertyAll(
-                                Color.fromARGB(255, 70, 42, 146)),
+                                Color.fromARGB(255, 70, 40, 140)),
                             padding: const MaterialStatePropertyAll(
                                 EdgeInsets.only(
                                     top: 15, bottom: 15, left: 80, right: 80)),

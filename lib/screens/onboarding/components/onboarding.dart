@@ -102,13 +102,13 @@ class _OnboardingState extends State<Onboarding> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32)),
                       backgroundColor: currentPage == boardingData.length - 1
-                          ? const Color.fromRGBO(117, 167, 86, 1.000)
+                          ? const Color.fromRGBO(115, 170, 85, 1.000)
                           : null,
                       side: BorderSide(
                         width: 1.5,
                         color: currentPage == boardingData.length - 1
                             ? Colors.white
-                            : const Color.fromARGB(255, 116, 116, 116),
+                            : const Color.fromARGB(255, 115, 115, 115),
                       )),
                   child: Text(
                     currentPage == boardingData.length - 1
@@ -118,7 +118,7 @@ class _OnboardingState extends State<Onboarding> {
                       fontSize: 17,
                       color: currentPage == boardingData.length - 1
                           ? Colors.white
-                          : const Color.fromARGB(255, 97, 97, 97),
+                          : const Color.fromARGB(255, 95, 95, 95),
                     ),
                   ),
                 ),

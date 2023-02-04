@@ -27,7 +27,7 @@ class ContentBoarding extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 21,
                     fontWeight: FontWeight.w700,
-                    color: Color.fromARGB(255, 72, 34, 138)),
+                    color: Color.fromARGB(255, 70, 30, 130)),
               ),
             ),
             Text(
@@ -36,7 +36,7 @@ class ContentBoarding extends StatelessWidget {
               style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w300,
-                  color: Color.fromARGB(255, 73, 73, 73)),
+                  color: Color.fromARGB(255, 70, 70, 70)),
             ),
           ],
         ),
