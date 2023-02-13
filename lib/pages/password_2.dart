@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_app/pages/register.dart';
-import 'package:flutter_app/pages/password_1.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
-
-  @override
-  State<Login> createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
-  bool obsText = true;
+class Password2 extends StatelessWidget {
+  const Password2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +39,9 @@ class _LoginState extends State<Login> {
                                   iconSize: 35,
                                 ),
                                 const Text(
-                                  "Iniciar sesión",
+                                  "Recuperar contraseña",
                                   style: TextStyle(
-                                      fontSize: 22, color: Colors.white),
+                                      fontSize: 20.5, color: Colors.white),
                                 )
                               ],
                             ),
@@ -71,13 +62,40 @@ class _LoginState extends State<Login> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Padding(
-                          padding: EdgeInsets.only(bottom: 60),
+                          padding: EdgeInsets.only(bottom: 40),
                           child: Text(
-                            "Ingresa tus datos",
+                            "Por seguridad, tu contraseña debe tener una longitud de entre 8 y 15 caracteres, usar mayúsculas, minúsculas, contener por lo menos un númer y un cáracter especial.",
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w700,
                                 color: Color.fromARGB(255, 99, 99, 99)),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 35),
+                          child: Column(
+                            children: [
+                              Container(
+                                  alignment: Alignment.centerLeft,
+                                  child: const Padding(
+                                    padding: EdgeInsets.only(bottom: 6),
+                                    child: Text("Nueva contraseña",
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w800,
+                                            color: Colors.black)),
+                                  )),
+                              TextFormField(
+                                decoration: InputDecoration(
+                                  hintText: "Nueva contraseña",
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(14),
+                                  ),
+                                ),
+                                style: const TextStyle(
+                                    fontSize: 17, fontWeight: FontWeight.w500),
+                              ),
+                            ],
                           ),
                         ),
                         Padding(
@@ -88,7 +106,7 @@ class _LoginState extends State<Login> {
                                   alignment: Alignment.centerLeft,
                                   child: const Padding(
                                     padding: EdgeInsets.only(bottom: 6),
-                                    child: Text("Correo electrónico",
+                                    child: Text("Confirmar nueva contraseña",
                                         style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w800,
@@ -96,7 +114,7 @@ class _LoginState extends State<Login> {
                                   )),
                               TextFormField(
                                 decoration: InputDecoration(
-                                  hintText: "Dirección de correo",
+                                  hintText: "Confirma tu nueva contraseña",
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(14),
                                   ),
@@ -108,45 +126,7 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 15),
-                          child: Column(
-                            children: [
-                              Container(
-                                  alignment: Alignment.centerLeft,
-                                  child: const Padding(
-                                    padding: EdgeInsets.only(bottom: 6),
-                                    child: Text("Contraseña",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w800,
-                                            color: Colors.black)),
-                                  )),
-                              TextFormField(
-                                decoration: InputDecoration(
-                                  hintText: "Contraseña",
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(14),
-                                  ),
-                                  suffixIcon: IconButton(
-                                    icon: Icon(obsText
-                                        ? Icons.visibility
-                                        : Icons.visibility_off),
-                                    onPressed: () {
-                                      setState(() {
-                                        obsText = !obsText;
-                                      });
-                                    },
-                                  ),
-                                ),
-                                style: const TextStyle(
-                                    fontSize: 17, fontWeight: FontWeight.w500),
-                                obscureText: obsText,
-                              ),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 50),
+                          padding: const EdgeInsets.only(top: 276),
                           child: SizedBox(
                             width: double.infinity,
                             height: 60,
@@ -162,58 +142,10 @@ class _LoginState extends State<Login> {
                                       color:
                                           Color.fromRGBO(117, 167, 86, 1.000))),
                               child: const Text(
-                                "Crear cuenta",
+                                "Actualizar contraseña",
                                 style: TextStyle(
                                     fontSize: 19, color: Colors.white),
                               ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: InkWell(
-                            onTap: () => {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const Register()))
-                            },
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "¿No tienes una cuenta? ",
-                                  style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w500,
-                                      color: Color.fromARGB(255, 73, 73, 73)),
-                                ),
-                                Text(
-                                  "Registrate",
-                                  style: TextStyle(
-                                      fontSize: 16.5,
-                                      fontWeight: FontWeight.w800,
-                                      color: Color.fromARGB(255, 216, 67, 99)),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 15),
-                          child: InkWell(
-                            onTap: () => {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const Password1()))
-                            },
-                            child: const Text(
-                              "¿Olvidaste tu contraseña? ",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  color: Color.fromARGB(255, 73, 73, 73)),
                             ),
                           ),
                         ),
