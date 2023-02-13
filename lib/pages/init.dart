@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_app/pages/login.dart';
 import 'package:flutter_app/pages/register.dart';
-import 'package:flutter_app/pages/password_1.dart';
 
 class Begin extends StatelessWidget {
   const Begin({super.key});

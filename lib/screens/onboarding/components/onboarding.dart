@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_app/pages/init.dart';
 
 import 'package:flutter_app/screens/onboarding/components/content_boarding.dart';
