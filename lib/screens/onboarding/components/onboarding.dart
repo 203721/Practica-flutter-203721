@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/init.dart';
+import 'package:flutter_app/pages/begin.dart';
 
 import 'package:flutter_app/screens/onboarding/components/content_boarding.dart';
 import 'package:flutter_app/screens/onboarding/components/content_page.dart';
